@@ -1,0 +1,94 @@
+when get data  DO THE FOLLOWING THINGS ::
+
+
+check missing  values 
+check duplicate values 
+
+data look mathematically {describe fn } ::  helps to detect outliers , only works for numerical col 
+correlation b/w cols ::  helps to remove unrelated col
+
+
+data : C:\codes\data
+
+
+Charts :  
+
+
+Univariate : 
+countplot 
+pieChart 
+histogram 
+distplot 
+boxplot 
+bubble charts
+
+
+Bivariate : 
+
+scatterplot 
+BarPlot 
+Line plot 
+pair plot 
+HeatMap 
+Cluster Map
+JointPlot
+
+Multivariate:
+
+3d scatter plot 
+facetgrids 
+Pair plots 
+
+
+
+=> REGRESSION  : 
+Simple Lr :  DIRECT FORMULA / Grdaient descent 
+multiple LR 
+Polynomial 
+
+
+
+=> UNSUPERVISED LEARNING   : 
+K means clustering 
+agglomerative clustering
+DBSCAN 
+
+                                        FEATURE_ENGINEERING
+    
+     FEATURE SCALING :
+
+          standardization : [ StandardScaler  ]
+          Normalization : [ MinMaxSCaler,Mean Normalization , MaxAbsScaling  , RobustScaler]  
+     Encoding data : 
+          Label Encoder 
+          Ordinal Encoder 
+          One hot encoding 
+          pandas dummies
+     workflow transformations  : 
+          ColumnTransformer 
+          Pipeline 
+
+     Hyperparamter tuning : 
+          Cross Val Score || K-fold
+          Grid Search CV 
+     Missing Values  :
+          drop them 
+          Simple Imputer 
+          KNN imputer 
+          Missing Indicator
+          Iterative Imputer 
+          Numerical COLS : [by mean, by median, random,end of distribution] 
+          Categorical COLS : [mode :most frequent , new category : missing]
+   
+     
+
+
+
+Gradient Descent -  batch , Stochastic , mini-batch GD 
+
+
+
+some other techniques : 
+
+=>  df.isnull().mean() * 100 => gives the percentage of missing data directly 
+=> df.dropna().sample() => gives a sample from dataset after dropping null values 
