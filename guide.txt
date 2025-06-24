@@ -8,6 +8,9 @@ data look mathematically {describe fn } ::  helps to detect outliers , only work
 correlation b/w cols ::  helps to remove unrelated col
 
 
+To reduce overfitting :
+- bagging - boosting - regularization 
+
 data : C:\codes\data
 
 
@@ -92,3 +95,5 @@ some other techniques :
 
 =>  df.isnull().mean() * 100 => gives the percentage of missing data directly 
 => df.dropna().sample() => gives a sample from dataset after dropping null values 
+=> np.mean(cross_val_score(mode,x,y,cv,scoring="accuracy"))  => gives the final acc by fitting to the model "cv" times
+=> data[col].skew() => if ~0  then data is normally dist else >0  right skewed <0 left skewed , right skewed => outliers on right side 
