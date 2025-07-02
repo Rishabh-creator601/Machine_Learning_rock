@@ -1,0 +1,6 @@
+algos with maths but not code:
+
+1) KNN
+2) Naive Bayes
+3)  Gaussian Naive Bayes
+4) AdaBoost
