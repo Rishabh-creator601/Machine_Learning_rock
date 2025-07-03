@@ -3,15 +3,21 @@ when get data  DO THE FOLLOWING THINGS ::
 
 check missing  values 
 check duplicate values 
-
 data look mathematically {describe fn } ::  helps to detect outliers , only works for numerical col 
 correlation b/w cols ::  helps to remove unrelated col
 
 
-To reduce overfitting :
+
+
+General Understanding
+
+1) To reduce overfitting :
 - bagging - boosting - regularization 
 
-data : C:\codes\data
+2)feature extraction :
+- PCA - LDA(Linear Discriminant Analysis) - T-sne
+
+
 
 
 Charts :  
@@ -88,6 +94,60 @@ DBSCAN
 
 
 Gradient Descent -  batch , Stochastic , mini-batch GD 
+
+
+
+
+PCA 🟢
+LINEAR REGRESSION 🟢
+-REGULARIZARION:  🟢
+|| RIDGE 
+|| LASSO 
+|| ELASTIC NET 
+GRADIENT DESCENT: 🟢
+|| MINI BATCH 
+|| SGD
+|| BATCH 
+LOGISTIC  🟢
+DECISION TREES 🟢
+VOTING ENSEMBLE  🟢
+BAGGING  🟢
+RANDOM FOREST  🟢
+-BOOSTING:
+|| ADABOOST 🟢
+|| GRADIENT BOOSTING
+|| XGBOOST 
+STACKING  🟢
+KNEIGHBORS 🟢
+SVM 
+K-MEANS  🟢
+AGGLOMERATIVE 🟢
+DBSCAN 🟢
+NAIVE BAYES(+GNB) 🟢
+SMOTE 🟢
+OPTUNA 🟢
+ROC curve 🟢
+
+
+
+
+
+
+SVM :
+- constraint optimization {convex analysis and  optimization theory || lagranges's multipliers || quadratic programming}
+-  why ||w|| == ||w||^2/2=>  just to make it differentiable 
+-  1/||w||  comes from  
+
+stats , vo anova and chi square chod diya hain
+
+
+Ml : GRADIENT BOOSTING and XGBOOST {superb algo just baad me } {much to explore and experiement} {only campusx videos}{ref}
+: SVM {learn constraint optimization theory & lagranges multipliers } + {saved articles and videos}
+
+
+
+
+
 
 
 
