@@ -7,6 +7,11 @@ data look mathematically {describe fn } ::  helps to detect outliers , only work
 correlation b/w cols ::  helps to remove unrelated col
 
 
+FINAL TEXT :
+----------------------------------------------------------------------------------------
+r2 score not applied in classification tasks but used for regression tasks
+low bias +  high variance models 
+----------------------------------------------------------------------------------------
 
 
 General Understanding
