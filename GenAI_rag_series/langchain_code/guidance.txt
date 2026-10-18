@@ -1,0 +1,122 @@
+
+## guide 
+ASSETS  = random text , pdf and csv files for testing and featuring
+save a api key in .env file with OPENAI_API_KEY = "<key>" kind of   
+
+
+
+MODELS  {just load api and simple queries}
+
+openai models ....  done 
+anthropic ....  paid 
+gemini  ....  not working 
+hugging face ...  already done before 
+
+
+
+PROMPT  ENGINEERING   {code left }
+prompt template  => json saving of template 
+messages  => humanMessage , System Message , AIMessage 
+Message Placeholder  => a bit unclear but old history is used kind of 
+
+
+
+STRUCTURED  OUTPUT  & PARSER {code left}
+Typedict 
+pydantic 
+Json 
+stroutput 
+
+
+
+CHAINS  and RUNNABLES  
+
+Simple 
+Sequential 
+parallel 
+conditional 
+
+
+
+
+DOCUMENT LOADERS 
+
+TextLoader 
+PDF LOADER 
+WEB BASED LOADER 
+DIRECTORY LOADER 
+CSV LOADER 
+LOAD VS LAZY LOAD {loading whole vs laoding in chunks/tokens like a generator }
+Customer loaders {langchain site }
+
+
+
+
+TEXT SPLITTERS 
+
+Length based 
+text-structure based 
+document-structure based 
+semantic meaning based 
+custom and more are there {lanchain site }
+
+
+
+RUNNABLES {code left }
+
+RunnableSequence
+Runnable Parallel
+RunnablePassthrough
+RunnableLambda
+RunnableBranch
+LCEL { langchain expression language }
+
+
+
+VECTOR STORES AND DATABASE 
+
+chroma db 
+FAISS 
+pinecone 
+
+
+
+
+RETRIEVERS 
+
+Wikipedia Retriever & Code Demo
+Vector Store Retriever
+Maximum Marginal Relevance - MMR
+Multi Query Retriever
+Contextual Compression Retriever
+
+
+
+TOOLS / TOOL CALLING 
+@tool and Built in tools like {duckduckgo , raw python code , Python REPL tool , Shell Tool,GoogleDrive  }
+structured tool & pydantic 
+baseTool 
+
+
+Binding 
+Calling 
+Execution 
+
+
+AGENTS 
+Agent and Agent Executor 
+ReAct ~ Reasoning +  Acting 
+
+
+
+RAG /ADVANCED RAG {advanced rag course imp parts }
+RAG Fusion and RRF
+HyDE (Hypothetical Document Embeddings)
+Corrective RAG (CRAG)
+Self-RAG, 
+Graph RAG
+Multi Modal RAG
+
+
+
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Instructions</title>
+<style>
+  :root { --text: #37352f; --muted: #787774; --bg: #ffffff; --code-bg: rgba(135,131,120,.15); --code-fg: #eb5757; --border: #e9e9e7; }
+  @media (prefers-color-scheme: dark) {
+    :root { --text: #e6e6e4; --muted: #9b9a97; --bg: #191919; --code-bg: rgba(135,131,120,.25); --code-fg: #ff7369; --border: #2f2f2f; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 64px 16px 96px; }
+  h1 { font-size: 2.5rem; line-height: 1.2; margin: 0 0 24px; }
+  li { margin: 4px 0; }
+  li p { margin: 6px 0; }
+  code { font-family: "SFMono-Regular", Menlo, Consolas, monospace; font-size: 85%; background: var(--code-bg); color: var(--code-fg); padding: 2px 5px; border-radius: 4px; }
+  .source { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--muted); font-size: 13px; }
+  .source a { color: inherit; }
+</style>
+</head>
+<body>
+<main>
+<h1>Instructions</h1>
+<ol>
+  <li>start a new claude session</li>
+  <li>rename the session to ‘<code>database setup</code>’</li>
+  <li>Pull the most recent code - <code>git pull origin main</code></li>
+  <li>Create and switch to a new branch - <code>git checkout -b feature/database-setup</code></li>
+  <li>Create Spec document manually</li>
+  <li>Review the spec document</li>
+  <li>Save the spec document in <code>.claude/specs</code> folder by the name of <code>01-database-setup.md</code></li>
+  <li>Enter Plan mode and create a plan based on the spec document
+    <p>Read <code>.claude/specs/01-database-setup.md</code> and the existing <code>database/db.py</code> and <code>app.py</code>, then generate an implementation plan.Save this plan to <code>.claude/plans/01-database-setup.md</code></p>
+  </li>
+  <li>Implement the plan - review edits manually</li>
+  <li>Validate the implementation against the spec document</li>
+  <li>Iterate if required</li>
+  <li>commit the changes
+    <p><code>git add .</code></p>
+    <p><code>git commit -m ‘database setup’</code></p>
+  </li>
+  <li>Push the code to Github - <code>git push origin feature/database-setup</code></li>
+  <li>Create and merge the PR</li>
+  <li>Checkout to the main branch - <code>git checkout main</code></li>
+  <li>Delete the feature branch - <code>git branch -D feature/database-setup</code></li>
+</ol>
+<p class="source">Copied from Notion: <a href="https://app.notion.com/p/Instructions-33c2ccb4fd728016bb85d71e9d5ae3c6">Instructions</a></p>
+</main>
+</body>
+</html>

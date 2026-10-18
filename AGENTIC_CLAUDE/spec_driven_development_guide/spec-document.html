@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spec Document</title>
+<style>
+  :root { --text: #37352f; --muted: #787774; --bg: #ffffff; --code-bg: rgba(135,131,120,.15); --code-fg: #eb5757; --pre-bg: #f7f6f3; --border: #e9e9e7; --th-bg: #f7f6f3; }
+  @media (prefers-color-scheme: dark) {
+    :root { --text: #e6e6e4; --muted: #9b9a97; --bg: #191919; --code-bg: rgba(135,131,120,.25); --code-fg: #ff7369; --pre-bg: #202020; --border: #2f2f2f; --th-bg: #202020; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 64px 16px 96px; }
+  h1 { font-size: 2.5rem; line-height: 1.2; margin: 0 0 24px; }
+  h2 { font-size: 1.5rem; margin: 32px 0 8px; }
+  h3 { font-size: 1.25rem; margin: 24px 0 8px; }
+  p { margin: 6px 0; }
+  li { margin: 3px 0; }
+  hr { border: 0; border-top: 1px solid var(--border); margin: 20px 0; }
+  a { color: inherit; }
+  code { font-family: "SFMono-Regular", Menlo, Consolas, monospace; font-size: 85%; background: var(--code-bg); color: var(--code-fg); padding: 2px 5px; border-radius: 4px; }
+  pre { background: var(--pre-bg); padding: 16px; border-radius: 6px; overflow-x: auto; margin: 8px 0; }
+  pre code { background: none; color: inherit; padding: 0; font-size: 14px; }
+  .table-wrap { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; margin: 8px 0; font-size: 15px; }
+  th, td { border: 1px solid var(--border); padding: 6px 10px; text-align: left; vertical-align: top; }
+  th { background: var(--th-bg); font-weight: 600; }
+  .source { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<main>
+<h1>Spec Document</h1>
+
+<h2>1. Overview</h2>
+<p>Replace the stub in <code>database/db.py</code> with a working SQLite implementation.</p>
+<p>This step establishes the <strong>data layer foundation</strong> for the Spendly application.</p>
+<p>All future features (authentication, profile, expense tracking) depend on this being correctly implemented.</p>
+<hr>
+
+<h2>2. Depends on</h2>
+<p>Nothing — this is the first step.</p>
+<hr>
+
+<h2>3. Routes</h2>
+<ul>
+  <li>No new routes</li>
+  <li>Existing placeholder routes in <code>app.py</code> remain unchanged</li>
+</ul>
+<hr>
+
+<h2>4. Database Schema</h2>
+<hr>
+<h3>A. users</h3>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Column</th><th>Type</th><th>Constraints</th></tr></thead>
+  <tbody>
+    <tr><td>id</td><td>INTEGER</td><td>Primary key, autoincrement</td></tr>
+    <tr><td>name</td><td>TEXT</td><td>Not null</td></tr>
+    <tr><td>email</td><td>TEXT</td><td>Unique, not null</td></tr>
+    <tr><td>password_hash</td><td>TEXT</td><td>Not null</td></tr>
+    <tr><td>created_at</td><td>TEXT</td><td>Default datetime('now')</td></tr>
+  </tbody>
+</table>
+</div>
+<hr>
+<h3>B. expenses</h3>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Column</th><th>Type</th><th>Constraints</th></tr></thead>
+  <tbody>
+    <tr><td>id</td><td>INTEGER</td><td>Primary key, autoincrement</td></tr>
+    <tr><td>user_id</td><td>INTEGER</td><td>Foreign key → users.id, not null</td></tr>
+    <tr><td>amount</td><td>REAL</td><td>Not null</td></tr>
+    <tr><td>category</td><td>TEXT</td><td>Not null</td></tr>
+    <tr><td>date</td><td>TEXT</td><td>Not null (YYYY-MM-DD format)</td></tr>
+    <tr><td>description</td><td>TEXT</td><td>Nullable</td></tr>
+    <tr><td>created_at</td><td>TEXT</td><td>Default datetime('now')</td></tr>
+  </tbody>
+</table>
+</div>
+<hr>
+
+<h2>5. Functions to Implement (<code>database/db.py</code>)</h2>
+<hr>
+<h3>A. <code>get_db()</code></h3>
+<ul>
+  <li>Opens connection to <code>spendly.db</code> (or <code>expense_tracker.db</code>) in project root</li>
+  <li>Sets:
+    <ul>
+      <li><code>row_factory = sqlite3.Row</code></li>
+      <li><code>PRAGMA foreign_keys = ON</code></li>
+    </ul>
+  </li>
+  <li>Returns the connection</li>
+</ul>
+<hr>
+<h3>B. <code>init_db()</code></h3>
+<ul>
+  <li>Creates both tables using <code>CREATE TABLE IF NOT EXISTS</code></li>
+  <li>Safe to call multiple times</li>
+  <li>Ensures schema is ready before app usage</li>
+</ul>
+<hr>
+<h3>C. <code>seed_db()</code></h3>
+<ul>
+  <li>Checks if <code>users</code> table already contains data
+    <ul><li>If yes → return early (no duplication)</li></ul>
+  </li>
+  <li>Inserts one demo user:
+    <ul>
+      <li>name: Demo User</li>
+      <li>email: <a href="mailto:demo@spendly.com">demo@spendly.com</a></li>
+      <li>password: demo123 (hashed using <code>werkzeug</code>)</li>
+    </ul>
+  </li>
+  <li>Inserts <strong>8 sample expenses</strong>:
+    <ul>
+      <li>All linked to demo user</li>
+      <li>Cover multiple categories</li>
+      <li>Dates spread across current month</li>
+      <li>At least one expense per category</li>
+    </ul>
+  </li>
+</ul>
+<hr>
+
+<h2>6. Changes to <code>app.py</code></h2>
+<ul>
+  <li>Import:
+    <ul>
+      <li><code>get_db</code></li>
+      <li><code>init_db</code></li>
+      <li><code>seed_db</code></li>
+    </ul>
+  </li>
+  <li>Call <code>init_db()</code> and <code>seed_db()</code> inside <code>app.app_context()</code> on startup</li>
+  <li>Ensure DB is ready before routes are used</li>
+</ul>
+<hr>
+
+<h2>7. Files to Change</h2>
+<ul>
+  <li><code>database/db.py</code> → implement all functions</li>
+  <li><code>app.py</code> → add imports and startup calls</li>
+</ul>
+<hr>
+
+<h2>8. Files to Create</h2>
+<ul>
+  <li>None</li>
+</ul>
+<hr>
+
+<h2>9. Dependencies</h2>
+<ul>
+  <li>No new pip packages</li>
+  <li>Use:
+    <ul>
+      <li><code>sqlite3</code> (standard library)</li>
+      <li><code>werkzeug.security</code> (already installed)</li>
+    </ul>
+  </li>
+</ul>
+<hr>
+
+<h2>10. Categories (Fixed List)</h2>
+<p>Use exactly these values:</p>
+<ul>
+  <li>Food</li>
+  <li>Transport</li>
+  <li>Bills</li>
+  <li>Health</li>
+  <li>Entertainment</li>
+  <li>Shopping</li>
+  <li>Other</li>
+</ul>
+<hr>
+
+<h2>11. Rules for Implementation</h2>
+<ul>
+  <li>No ORMs (no SQLAlchemy)</li>
+  <li>Use <strong>parameterized queries only</strong></li>
+  <li>Never use string formatting in SQL</li>
+  <li>Enable <code>PRAGMA foreign_keys = ON</code> on every connection</li>
+  <li>Store <code>amount</code> as REAL (float), not INTEGER</li>
+  <li>Hash passwords using:
+<pre><code>from werkzeug.security import generate_password_hash</code></pre>
+  </li>
+  <li><code>seed_db()</code> must prevent duplicate inserts</li>
+  <li>Dates must follow <strong>YYYY-MM-DD format consistently</strong></li>
+</ul>
+<hr>
+
+<h2>12. Expected Behavior</h2>
+<ul>
+  <li><code>get_db()</code> returns a working connection with:
+    <ul>
+      <li>dictionary-like row access</li>
+      <li>foreign key enforcement enabled</li>
+    </ul>
+  </li>
+  <li><code>init_db()</code>:
+    <ul>
+      <li>creates tables safely</li>
+      <li>does not fail on repeated runs</li>
+    </ul>
+  </li>
+  <li><code>seed_db()</code>:
+    <ul>
+      <li>inserts demo data only once</li>
+      <li>does not duplicate records on multiple runs</li>
+    </ul>
+  </li>
+  <li>Database enforces:
+    <ul>
+      <li>unique email constraint</li>
+      <li>valid foreign key relationships</li>
+    </ul>
+  </li>
+</ul>
+<hr>
+
+<h2>13. Error Handling Expectations</h2>
+<ul>
+  <li>Inserting duplicate email → should fail (UNIQUE constraint)</li>
+  <li>Inserting expense with invalid <code>user_id</code> → should fail (foreign key constraint)</li>
+  <li>Invalid queries → should raise clear errors for debugging</li>
+</ul>
+<hr>
+
+<h2>14. Definition of Done</h2>
+<ul>
+  <li>Database file is created on app startup</li>
+  <li>Both tables exist with correct schema and constraints</li>
+  <li>Demo user exists with hashed password</li>
+  <li>8 sample expenses exist across categories</li>
+  <li>No duplicate seed data on repeated runs</li>
+  <li>App starts without errors</li>
+  <li>Foreign key enforcement works</li>
+  <li>All queries use parameterized SQL</li>
+</ul>
+
+<p class="source">Copied from Notion: <a href="https://app.notion.com/p/Spec-Document-33a2ccb4fd728085bdc5da7dfd844dac">Spec Document</a></p>
+</main>
+</body>
+</html>

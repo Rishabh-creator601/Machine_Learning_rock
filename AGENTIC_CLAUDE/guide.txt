@@ -1,0 +1,168 @@
+
+
+slash commands 
+
+/rename 
+/resume 
+/btw 
+/export 
+/exit 
+/login /logout 
+/model 
+/stats 
+/insights 
+/permissions (allow , deny etc)
+/voice {yup voice}
+/config  => extended thinking =>  thinking mode true 
+/effort
+/ultraplan =>  advanced planning 
+
+
+context window management 
+/context
+/compact
+
+
+
+
+
+
+claude.md (auto pull for project ) {30% useful for basic memory}
+/init 
+
+
+
+PROCEDURE FOR APPLICATION 
+
+
+1) ./claude folder and under it and write in different md files about differnt parts of software in plain english
+2) .spec-driven development =>  detailed view of application written in over the vibe coding where the decision making is done by AI itself 
+3)  plan mode for reading spec driven development 
+
+
+
+
+CUSTOM SLASH COMMAND 
+
+1)  /.claude/command folder => name.md => 
+
+------
+description  :  ....
+allowed-tools :  <Tool1>  <Tool2>  
+allowed-hints :  <arg1>  <arg2>   | Plain English 
+-------
+
+
+in details point by point 
+
+
+
+SKILLS 
+
+./claude/skills 
+
+/skill-creator by claude itself <= better option
+or manually   for CUSTOM SKILLS 
+
+
+https://skillhub.club/skills/sverzijl-planning-latest-streamlit
+https://skillsmp.com/
+https://github.com/anthropics/skills
+skills.sh
+
+
+
+SUBAGENTS 
+
+./claude/agents 
+
+1)  explore 
+2)  Plan 
+3)  General Purpose 
+
+
+install the agents observer github lib fro tracking the agents getting triggered in UI format 
+
+
+CUSTOM SUBAGENTS 
+
+
+method 1 
+------
+name : ...
+description : ....
+tools :  .....
+model  :  sonnet / fable /....
+-------
+
+
+detailed points 
+
+
+method 2 
+/agents => create a new agent 
+
+
+MCP SERVERS 
+/mcp
+
+these servers are tools provided by the claude and site to connect them that offer tools to access the things
+for ex google drive will provide their mcp tools to connect with claude 
+
+1)  github 
+2) figma 
+
+
+
+
+HOOKS 
+
+LLM applications, when automated, run under probabilities, and as probabilities change, it may give error or not enforce certain things due to the automated decision making. So, hooks are the programmed scripts done by the programmer to enforce certain things, and instead of probability, it introduces determinancy.
+
+
+I am not able to understand it where and how will going to use leaving so 
+
+
+
+PLUGINS 
+/plugins 
+
+add a 3rd party marketplace for better searching of plugins 
+
+a compete workflow setup where you have skills, commands and mcp servers and hooks as a small lib and setup to any machine 
+
+
+
+
+
+
+
+older organize 
+visualization dashboards 
+creative writing 
+writing email 
+claude in excel 
+powerpoint 
+creating a landing page 
+website with Gemini integration 
+AI agents using GPT 
+
+
+skipped :
+post on linkeln 
+DCF , LBO financial models 
+Personal AI agent architecture 
+Notion sprint tracker {i use obsidian} 
+
+
+
+AI agents :  https://colab.research.google.com/drive/1N9OP52lXPketAz86vCLL7pybrJdTkI5j
+
+
+
+~ Plugins 
+~ Skills 
+~ slash commands 
+
+
+

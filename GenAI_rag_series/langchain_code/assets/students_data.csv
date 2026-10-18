@@ -1,0 +1,101 @@
+Student ID,Name,Age,Course,CGPA
+STU0001,Emma Agarwal,18,Data Science,6.22
+STU0002,Diya Agarwal,19,Economics,7.11
+STU0003,Aarav Gupta,21,Civil Engg,7.53
+STU0004,Aarav Garcia,21,Commerce,7.10
+STU0005,Sneha Lee,22,Computer Science,8.79
+STU0006,Ishaan Kapoor,23,Data Science,5.78
+STU0007,Sophia Joshi,19,Mechanical Engg,6.90
+STU0008,Kabir Nair,22,Computer Science,8.65
+STU0009,Pooja Agarwal,24,Mechanical Engg,7.76
+STU0010,Mia Chen,23,Economics,5.96
+STU0011,Aditya Verma,21,Data Science,9.93
+STU0012,Lucas Iyer,19,Physics,6.39
+STU0013,Emma Nair,20,Mathematics,6.78
+STU0014,Liam Khan,19,Economics,8.17
+STU0015,Pooja Iyer,20,Biotechnology,6.90
+STU0016,Omar Garcia,21,Mathematics,9.21
+STU0017,Sophia Verma,21,Computer Science,9.03
+STU0018,Priya Khan,19,Civil Engg,9.57
+STU0019,Aryan Joshi,21,Biotechnology,6.98
+STU0020,Omar Smith,20,Data Science,5.70
+STU0021,Noah Garcia,22,Economics,7.14
+STU0022,Aryan Das,23,Civil Engg,9.99
+STU0023,Diya Wilson,25,Mechanical Engg,8.78
+STU0024,Lucas Agarwal,20,Electrical Engg,8.96
+STU0025,Rahul Chen,19,Physics,6.91
+STU0026,Sneha Wilson,22,Commerce,9.30
+STU0027,Aarav Agarwal,22,Mathematics,5.56
+STU0028,Rahul Singh,25,Computer Science,9.77
+STU0029,Zara Khan,20,Commerce,9.56
+STU0030,Lucas Mehta,21,Electrical Engg,6.87
+STU0031,Ishaan Garcia,18,Economics,6.62
+STU0032,Aarav Agarwal,23,Data Science,6.20
+STU0033,Rohan Lee,19,Mechanical Engg,8.66
+STU0034,Mia Gupta,20,Electrical Engg,8.30
+STU0035,Pooja Singh,22,Commerce,9.36
+STU0036,Rahul Reddy,21,Data Science,6.99
+STU0037,Liam Nair,25,Commerce,7.26
+STU0038,Rohan Iyer,19,Mathematics,5.11
+STU0039,Pooja Iyer,21,Computer Science,5.35
+STU0040,Emma Verma,21,Mechanical Engg,9.53
+STU0041,Lucas Joshi,19,Commerce,6.19
+STU0042,Liam Brown,21,Commerce,5.66
+STU0043,Omar Lee,25,Civil Engg,8.92
+STU0044,Ethan Kapoor,21,Mechanical Engg,5.48
+STU0045,Rahul Nair,24,Physics,7.34
+STU0046,Noah Verma,19,Computer Science,7.01
+STU0047,Meera Agarwal,21,Civil Engg,5.95
+STU0048,Sneha Patel,24,Electrical Engg,6.39
+STU0049,Rohan Gupta,25,Commerce,5.49
+STU0050,Emma Garcia,18,Mechanical Engg,9.63
+STU0051,Lucas Iyer,20,Physics,7.43
+STU0052,Kavya Das,18,Electrical Engg,6.89
+STU0053,Priya Khan,25,Data Science,7.12
+STU0054,Noah Garcia,25,Electrical Engg,5.95
+STU0055,Kavya Verma,18,Mathematics,5.29
+STU0056,Aryan Brown,20,Computer Science,9.80
+STU0057,Aditya Singh,19,Economics,5.34
+STU0058,Lucas Iyer,24,Mechanical Engg,9.71
+STU0059,Aryan Iyer,18,Economics,5.41
+STU0060,Liam Lee,23,Data Science,6.02
+STU0061,Olivia Joshi,21,Data Science,6.98
+STU0062,Liam Mehta,25,Mathematics,9.65
+STU0063,Omar Gupta,18,Biotechnology,8.11
+STU0064,Aryan Agarwal,19,Commerce,6.07
+STU0065,Saanvi Patel,23,Mechanical Engg,9.40
+STU0066,Kabir Mehta,20,Biotechnology,9.17
+STU0067,Olivia Mehta,18,Commerce,6.50
+STU0068,Liam Agarwal,20,Data Science,5.58
+STU0069,Ananya Garcia,20,Data Science,6.41
+STU0070,Kavya Joshi,21,Data Science,7.53
+STU0071,Saanvi Verma,19,Physics,9.15
+STU0072,Vivaan Sharma,23,Electrical Engg,8.19
+STU0073,Saanvi Singh,25,Commerce,8.53
+STU0074,Pooja Sharma,19,Mechanical Engg,9.73
+STU0075,Olivia Patel,18,Mathematics,7.91
+STU0076,Diya Kapoor,20,Computer Science,6.54
+STU0077,Zara Verma,23,Civil Engg,8.41
+STU0078,Liam Agarwal,23,Commerce,9.42
+STU0079,Rahul Chen,20,Civil Engg,9.32
+STU0080,Ethan Singh,24,Computer Science,5.90
+STU0081,Omar Joshi,24,Civil Engg,6.33
+STU0082,Ethan Agarwal,24,Computer Science,9.29
+STU0083,Rohan Reddy,25,Mathematics,6.53
+STU0084,Ethan Iyer,21,Computer Science,8.30
+STU0085,Priya Joshi,22,Mechanical Engg,9.83
+STU0086,Saanvi Nair,24,Commerce,6.66
+STU0087,Aarav Agarwal,22,Electrical Engg,7.90
+STU0088,Saanvi Verma,19,Economics,7.17
+STU0089,Noah Joshi,24,Economics,9.92
+STU0090,Ananya Das,21,Data Science,5.22
+STU0091,Rahul Sharma,21,Mathematics,7.16
+STU0092,Liam Joshi,23,Mechanical Engg,8.60
+STU0093,Arjun Wilson,22,Physics,6.63
+STU0094,Olivia Mehta,20,Civil Engg,7.10
+STU0095,Priya Singh,22,Physics,7.74
+STU0096,Aarav Mehta,22,Civil Engg,7.15
+STU0097,Aryan Chen,23,Biotechnology,7.21
+STU0098,Liam Reddy,25,Electrical Engg,8.29
+STU0099,Arjun Wilson,23,Mechanical Engg,9.09
+STU0100,Sophia Iyer,22,Civil Engg,9.03

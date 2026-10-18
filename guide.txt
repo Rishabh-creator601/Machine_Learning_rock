@@ -151,7 +151,9 @@ Ml : GRADIENT BOOSTING and XGBOOST {superb algo just baad me } {much to explore 
 
 
 
+AGENTIC CLAUDE CODING 
 
+can be used anytime but learn langchain genai and rag before it for better understanding of LLMS nd reasoning behind the claude code 
 
 
 
