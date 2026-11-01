@@ -1,0 +1,26 @@
+
+
+
+1)  traceable decorators 
+using @traceable(name="")
+
+
+2)  os.environ["LANGCHAIN_PROJECT"]  = <new project name>
+
+
+
+3)  Other features  are such as monitoring , different versions of prompts and models ,dataset creation 
+
+
+
+
+
+ENV CONTENTS 
+
+
+OPENAI_API_KEY=""
+
+LANGCHAIN_TRACING_V2=true 
+LANGCHAIN_ENDPOINT='https://api.smith.langchain.com'
+LANGCHAIN_API_KEY=""
+LANGCHAIN_PROJECT='langsmith-demo
