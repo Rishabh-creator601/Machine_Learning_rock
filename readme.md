@@ -10,7 +10,7 @@
 4)  Algorithms 
 5)  practical_coding 
 6)  Tools {mostly will contain mlops part in upcoming code | not to be confused with LangChain Tools  }
-7)  GenAI_rag_series {Langchain  | RAG | Tools   }
+7)  GenAI_rag_series {Langchain  | RAG | Langgraph   }
 8)  AGENTIC_CLAUDE 
 
 
