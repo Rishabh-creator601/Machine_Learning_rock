@@ -1,0 +1,20 @@
+
+
+
+WORKFLOWS 
+
+1)  Sequential WORKFLOWS
+2)  Parallel WORKFLOWS [Normal +  prompt chaining ]
+3)  CONDITIONAL WORKFLOWS 
+4)  Iterative WORKFLOWS [same as 3) but with more conditions ] 
+
+
+
+
+
+Chatbot in Langgraph   Feature list 
+1) Checkpoint |  Memory saver | thread id 
+2) streaming in streamlit langgraph [loading text word by word]
+3)  Resume chat feature 
+4)  SQLITE integration [via Sqlite checkpoint saver ]
+
