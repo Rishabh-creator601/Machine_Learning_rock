@@ -12,9 +12,35 @@ WORKFLOWS
 
 
 
+
+
+1) Persistence  ~ memory checkpoint 
+2)  Time travel {almost same }
+3)  fault tolerance {almost same }
+
+
+
+1) Observability in langgraph using langsmith 
+2)  Tools in langgraph
+3)  mcp integration [code]
+4)  Human in the Loop (HITL)
+5)  Subgraphs 
+6) rag with langgraph [using rag as internal tool and return retirved message ] [code]
+
+
+
+
+PROJECTS  [CODE]
+
 Chatbot in Langgraph   Feature list 
 1) Checkpoint |  Memory saver | thread id 
 2) streaming in streamlit langgraph [loading text word by word]
 3)  Resume chat feature 
 4)  SQLITE integration [via Sqlite checkpoint saver ]
+5)  Tool integration 
+6)  tools via MCP 
+7)  Observability integration {new code pls watch video }
+
+
+Blog writing AI agent 
 
