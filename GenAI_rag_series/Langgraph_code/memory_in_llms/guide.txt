@@ -13,3 +13,11 @@ things we need a YAML file which is composed in Docker. so its docker.YAML
 Open the Docker desktop and wait till the engine is running. 
 and run  docker compose up -d in terminal then run notebook 
 
+
+
+special note for #5 
+
+1) must watch :  https://www.youtube.com/watch?v=KrXBcokM3Tc&list=PLKnIA16_RmvYsvB8qkUQuJmJNuiCUJFPL&index=25&t=3495s
+2) There is an output parser format called `LLM with structured output.` read the blog code like llm.with_structured_output 
+ 
+
