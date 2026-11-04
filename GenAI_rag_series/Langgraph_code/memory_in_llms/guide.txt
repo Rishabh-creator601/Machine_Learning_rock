@@ -1,0 +1,15 @@
+
+Read all these notebooks in the following sequence:
+1. Short-term memory Postgres
+2. Short-term memory trimming and deletion
+3. Short-term memory summarization
+4. Long-term memory basic implementation
+5. Long term memory chatbot  implementation # half skipped  [must watch :  https://www.youtube.com/watch?v=KrXBcokM3Tc&list=PLKnIA16_RmvYsvB8qkUQuJmJNuiCUJFPL&index=25&t=3495s]
+6. Long-term memory Postgres # skipped 
+
+
+Note for Postgres notebooks : 
+things we need a YAML file which is composed in Docker. so its docker.YAML
+Open the Docker desktop and wait till the engine is running. 
+and run  docker compose up -d in terminal then run notebook 
+

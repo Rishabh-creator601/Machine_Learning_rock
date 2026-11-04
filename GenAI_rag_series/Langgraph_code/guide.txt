@@ -11,7 +11,7 @@ WORKFLOWS
 
 
 
-
+CHECKPOINT 
 
 
 1) Persistence  ~ memory checkpoint 
@@ -20,12 +20,28 @@ WORKFLOWS
 
 
 
+
+
+METHODS AND OTHER TOOLS 
+
 1) Observability in langgraph using langsmith 
 2)  Tools in langgraph
 3)  mcp integration [code]
 4)  Human in the Loop (HITL)
 5)  Subgraphs 
 6) rag with langgraph [using rag as internal tool and return retirved message ] [code]
+
+
+
+
+
+MEMORY IN LLMS (memory_in_llms folder )
+1)  short term memory 
+2)  long term memory 
+
+
+
+
 
 
 
