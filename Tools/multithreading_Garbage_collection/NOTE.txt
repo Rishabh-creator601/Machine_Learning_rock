@@ -1,1 +1,0 @@
-garbage collection : https://www.geeksforgeeks.org/python/garbage-collection-python/
