@@ -1,0 +1,6 @@
+1. Checking the missing values and the unique values
+2. Doing the EDA part
+3. Checking the skewness and the outliers
+4. Applying Transformations and scaling 
+5. Model building with cross-validation 
+6. Getting the evaluation metrics, depending on the regression and the classification, different metrics
