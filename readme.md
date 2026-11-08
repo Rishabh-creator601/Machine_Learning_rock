@@ -5,7 +5,7 @@
 
 # Flow chart in which to follow
 
-![[flow]]
+![[./flow]]
 
 
 
