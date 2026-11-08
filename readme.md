@@ -5,7 +5,7 @@
 
 # Flow chart in which to follow
 
-<<<<<<< HEAD
+
 ```mermaid 
 
 flowchart TD
@@ -30,27 +30,20 @@ flowchart TD
 
     %% Step 4
     C_sub --> D["4. Supervised Model Training"]:::main
-    D_sub["• Linear Regression (OLS, GD, Ridge, Lasso, ElasticNet)<br>• Logistic Regression (MLE, Softmax)<br>• K-Nearest Neighbors (KNN)<br>• Support Vector Machines (SVM & Kernels)<br>• Naive Bayes (Gaussian, Multinomial, Bernoulli)<br>• Decision Trees (Cart, Entropy, Pruning)"]:::sub
+    D_sub["Model Training"]:::sub
     D --> D_sub
 
     %% Step 5
-    D_sub --> E["5. Ensemble & Advanced Modeling"]:::main
-    E_sub["• Voting & Stacking (Meta-learners, Blending)<br>• Bagging (Random Forests, OOB Evaluation)<br>• Boosting (AdaBoost, Gradient Boosting, XGBoost)<br>• Unsupervised Learning & Dim Reduction (K-Means, DBSCAN, PCA)"]:::sub
-    E --> E_sub
-
-    %% Step 6
-    E_sub --> F["6. Model Validation & Evaluation"]:::main
+    E_sub --> F["5. Model Validation & Evaluation"]:::main
     F_sub["• Cross-Validation (K-Fold, Stratified, TimeSeries)<br>• Metrics: MAE, MSE, RMSE, R²<br>• Metrics: Confusion Matrix, Precision, Recall, F1, ROC-AUC"]:::sub
     F --> F_sub
 
-    %% Step 7
-    F_sub --> G["7. Hyperparameter Optimization"]:::main
+    %% Step 6
+    F_sub --> G["6. Hyperparameter Optimization"]:::main
     G_sub["• Exhaustive Search (GridSearchCV)<br>• Randomized Search (RandomizedSearchCV)<br>• Probabilistic Search (Bayesian Optimization)"]:::sub
     G --> G_sub
 ```
-=======
-![[./flow]]
->>>>>>> 930edd6a037fb7de87b1ffbb04c33ae7190de8b5
+
 
 
 
