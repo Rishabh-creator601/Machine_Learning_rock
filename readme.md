@@ -7,7 +7,6 @@
 
 
 ```mermaid 
-
 flowchart TD
     %% Styling
     classDef main fill:#1e293b,stroke:#38bdf8,stroke-width:2px,color:#f8fafc,font-weight:bold;
@@ -34,7 +33,7 @@ flowchart TD
     D --> D_sub
 
     %% Step 5
-    E_sub --> F["5. Model Validation & Evaluation"]:::main
+    D_sub --> F["5. Model Validation & Evaluation"]:::main
     F_sub["• Cross-Validation (K-Fold, Stratified, TimeSeries)<br>• Metrics: MAE, MSE, RMSE, R²<br>• Metrics: Confusion Matrix, Precision, Recall, F1, ROC-AUC"]:::sub
     F --> F_sub
 
