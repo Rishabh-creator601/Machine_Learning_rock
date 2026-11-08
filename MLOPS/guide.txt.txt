@@ -2,14 +2,5 @@
 
 1)  production-grade function 
 
-In order to build the development-grade application, we must know the components that are production-grade. 
-
-
-DEVELOPMENT GRADE FUNCTION 
-
-1)  each parameter has data type and can have default values 
-2)  each parameter has success or failed result ,either message or in progress 
-3)  minimum hardcoded values 
-4)  each function has max 2 work and main work under try except 
-5)  each function knows what is getting returned ->  ?  
-6)  if multiple objects are returning make a data class for it 
+In order to build the Production -grade application, we must know the components that are production-grade. 
+In order to build a function that is production-grade, these are the steps one must follow. 

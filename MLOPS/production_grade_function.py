@@ -17,12 +17,16 @@ from functools import partial
 
 DEVELOPMENT GRADE FUNCTION 
 
+
 1)  each parameter has data type and can have default values 
 2)  each parameter has success or failed result ,either message or in progress 
 3)  minimum hardcoded values 
 4)  each function has max 2 work and main work under try except 
 5)  each function knows what is getting returned ->  ?  
+6)  if multiple objects are returning make a data class for it 
 
+ 
+Prerequisites :  dataclasses , returns Result [success,failure]
 
 """
 
