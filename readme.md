@@ -5,6 +5,7 @@
 
 # Flow chart in which to follow
 
+<<<<<<< HEAD
 ```mermaid 
 
 flowchart TD
@@ -47,6 +48,9 @@ flowchart TD
     G_sub["• Exhaustive Search (GridSearchCV)<br>• Randomized Search (RandomizedSearchCV)<br>• Probabilistic Search (Bayesian Optimization)"]:::sub
     G --> G_sub
 ```
+=======
+![[./flow]]
+>>>>>>> 930edd6a037fb7de87b1ffbb04c33ae7190de8b5
 
 
 
