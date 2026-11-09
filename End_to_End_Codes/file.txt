@@ -1,6 +1,12 @@
-1. Checking the missing values and the unique values
-2. Doing the EDA part
-3. Checking the skewness and the outliers
-4. Applying Transformations and scaling 
-5. Model building with cross-validation 
-6. Getting the evaluation metrics, depending on the regression and the classification, different metrics
+1. Checking the missing and unique values
+2. EDA
+3. Checking skewness and applying a transformation and scaling
+4. Model building with cross-validation
+5. Hyperparameter tuning and comparison of models
+6. Getting relevant metrics depending on regression or classification 
+
+
+
+# small learnings 
+
+1)  in kde plot use `common_norm =  False` for actually better graph 
